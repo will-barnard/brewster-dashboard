@@ -1,0 +1,39 @@
+services:
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: drugans-dev-server
+    command: sh -c "cd server && npm install && npm run dev"
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    environment:
+      - NODE_ENV=development
+      - DB_PATH=/app/data/dashboard.db
+    volumes:
+      - ./server:/app/server
+      - ./client/dist:/app/client/dist
+      - ./.env:/app/.env
+      - server-modules:/app/server/node_modules
+      - db-data:/app/data
+
+  client:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: drugans-dev-client
+    command: sh -c "cd client && npm install && npm run dev -- --host 0.0.0.0"
+    ports:
+      - "5173:5173"
+    environment:
+      - API_URL=http://server:3000
+    volumes:
+      - ./client:/app/client
+      - client-modules:/app/client/node_modules
+
+volumes:
+  server-modules:
+  client-modules:
+  db-data:

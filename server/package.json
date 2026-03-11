@@ -1,0 +1,20 @@
+{
+  "name": "drugans-drums-dashboard-server",
+  "version": "1.0.0",
+  "description": "Backend for Drugan's Drums and Guitars dashboard and auth",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "seed": "node seed.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "better-sqlite3": "^11.7.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^17.3.1",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
