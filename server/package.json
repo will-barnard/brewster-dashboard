@@ -1,7 +1,7 @@
 {
-  "name": "drugans-drums-dashboard-server",
+  "name": "brewster-dashboard-server",
   "version": "1.0.0",
-  "description": "Backend for Drugan's Drums and Guitars dashboard and auth",
+  "description": "Backend for the Brewster dashboard and auth",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",

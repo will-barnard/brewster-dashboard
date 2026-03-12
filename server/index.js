@@ -24,7 +24,7 @@ app.use(
       if (!origin) return cb(null, true);
       if (
         allowedOrigins.includes(origin) ||
-        origin.endsWith('.drugansdrums.com')
+        origin.endsWith('.will-barnard.com')
       ) {
         return cb(null, true);
       }

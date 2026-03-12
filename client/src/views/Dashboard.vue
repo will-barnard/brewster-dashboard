@@ -32,22 +32,10 @@ const auth = useAuthStore();
 
 const apps = [
   {
-    name: 'Bundle Buyer',
-    url: 'https://bundlebuyer.drugansdrums.com',
-    icon: '📦',
-    description: 'Manage bundle purchasing and deals.',
-  },
-  {
-    name: 'Counter Offer',
-    url: 'https://counteroffer.drugansdrums.com',
-    icon: '🤝',
-    description: 'Handle counter offers and negotiations.',
-  },
-  {
-    name: 'Price Changer',
-    url: 'https://pricechanger.drugansdrums.com',
-    icon: '💲',
-    description: 'Update and manage product pricing.',
+    name: 'Example App',
+    url: 'https://app.will-barnard.com',
+    icon: '🚀',
+    description: 'Example linked application.',
   },
 ];
 </script>

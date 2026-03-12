@@ -1,6 +1,6 @@
-# Drugan's Drums & Guitars — Dashboard
+# Brewster Dashboard
 
-Central dashboard and authentication hub for the Drugan's Drums & Guitars app suite.
+Central dashboard and authentication hub for the Brewster app suite.
 
 ## Quick Start
 
@@ -17,7 +17,7 @@ npm run dev:client   # Vue dev server on :5173
 ```
 
 Default super admin credentials (change in `.env`):
-- **Email:** admin@drugansdrums.com
+- **Email:** admin@will-barnard.com
 - **Password:** changeme123
 
 ## Project Structure
@@ -39,10 +39,10 @@ client/           Vue 3 + Vite
 
 ## Cross-Subdomain Auth (SSO)
 
-Authentication works across all `*.drugansdrums.com` apps via a shared httpOnly cookie:
+Authentication works across all `*.will-barnard.com` apps via a shared httpOnly cookie:
 
-1. Set `COOKIE_DOMAIN=.drugansdrums.com` in `.env` for production
-2. Other apps call `GET https://dashboard.drugansdrums.com/api/auth/verify` with `credentials: 'include'` to validate the user
+1. Set `COOKIE_DOMAIN=.will-barnard.com` in `.env` for production
+2. Other apps call `GET https://dashboard.will-barnard.com/api/auth/verify` with `credentials: 'include'` to validate the user
 3. Add each app's origin to `CLIENT_ORIGIN` (comma-separated) for CORS
 
 ## Environment Variables
@@ -52,7 +52,7 @@ Copy `.env.example` to `.env` and configure:
 | Variable | Description |
 |---|---|
 | `JWT_SECRET` | Secret for signing JWT tokens |
-| `COOKIE_DOMAIN` | Cookie domain (`.drugansdrums.com` in prod, `localhost` for dev) |
+| `COOKIE_DOMAIN` | Cookie domain (`.will-barnard.com` in prod, `localhost` for dev) |
 | `PORT` | Server port (default: 3000) |
 | `CLIENT_ORIGIN` | Allowed CORS origins (comma-separated) |
 | `SUPER_ADMIN_EMAIL` | Super admin email for seed |

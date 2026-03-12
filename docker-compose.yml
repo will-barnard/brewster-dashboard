@@ -1,7 +1,7 @@
 services:
   dashboard:
     build: .
-    container_name: drugans-dashboard
+    container_name: brewster-dashboard
     restart: unless-stopped
     ports:
       - "49195:49195"

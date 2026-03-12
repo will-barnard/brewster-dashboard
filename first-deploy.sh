@@ -6,7 +6,7 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 cd "$SCRIPT_DIR"
 
-echo "=== Drugan's Drums Dashboard — First Deploy ==="
+echo "=== Brewster Dashboard — First Deploy ==="
 
 # 1. Check prerequisites
 for cmd in docker git; do
@@ -33,7 +33,7 @@ if [ ! -f .env ]; then
   echo ""
   echo "*** IMPORTANT: Edit .env before continuing! ***"
   echo "  - Set a strong JWT_SECRET"
-  echo "  - Set COOKIE_DOMAIN=.drugansdrums.com"
+  echo "  - Set COOKIE_DOMAIN=.will-barnard.com"
   echo "  - Set CLIENT_ORIGIN to your allowed origins"
   echo ""
   read -rp "Press Enter after editing .env to continue (or Ctrl+C to abort)..."

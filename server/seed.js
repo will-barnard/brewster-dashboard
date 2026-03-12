@@ -3,7 +3,7 @@ const bcrypt = require('bcrypt');
 const db = require('./db');
 
 async function seed() {
-  const email = process.env.SUPER_ADMIN_EMAIL || 'admin@drugansdrums.com';
+  const email = process.env.SUPER_ADMIN_EMAIL || 'admin@will-barnard.com';
   const password = process.env.SUPER_ADMIN_PASSWORD || 'changeme123';
 
   const existing = db.prepare('SELECT id FROM users WHERE email = ?').get(email);
@@ -15,7 +15,7 @@ async function seed() {
   const hash = await bcrypt.hash(password, 12);
   db.prepare(
     'INSERT INTO users (email, name, password, role) VALUES (?, ?, ?, ?)'
-  ).run(email, 'Super Admin', hash, 'super_admin');
+  ).run(email, 'Will', hash, 'super_admin');
 
   console.log(`Super admin created: ${email}`);
 }

@@ -3,7 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.dev
-    container_name: drugans-dev-server
+    container_name: brewster-dev-server
     command: sh -c "cd server && npm install && npm run dev"
     ports:
       - "3000:3000"
@@ -23,7 +23,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.dev
-    container_name: drugans-dev-client
+    container_name: brewster-dev-client
     command: sh -c "cd client && npm install && npm run dev -- --host 0.0.0.0"
     ports:
       - "5173:5173"

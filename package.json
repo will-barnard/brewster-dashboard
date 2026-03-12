@@ -1,8 +1,8 @@
 {
-  "name": "drugans-drums-dashboard",
+  "name": "brewster-dashboard",
   "version": "1.0.0",
   "private": true,
-  "description": "Dashboard and auth hub for Drugan's Drums and Guitars app suite",
+  "description": "Dashboard and auth hub for the Brewster app suite",
   "scripts": {
     "install:all": "cd server && npm install && cd ../client && npm install",
     "dev:server": "cd server && npm run dev",

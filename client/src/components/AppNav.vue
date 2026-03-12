@@ -2,7 +2,7 @@
   <nav class="nav-bar">
     <div class="nav-inner">
       <router-link to="/" class="nav-brand">
-        Drugan's Drums &amp; Guitars
+        Brewster Dashboard
       </router-link>
       <div class="nav-links">
         <router-link to="/">Dashboard</router-link>

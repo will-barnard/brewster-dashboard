@@ -1,7 +1,7 @@
 <template>
   <div class="login-page">
     <div class="login-card card">
-      <h1>Drugan's Drums &amp; Guitars</h1>
+      <h1>Brewster Dashboard</h1>
       <p class="subtitle">Sign in to the dashboard</p>
 
       <form @submit.prevent="handleLogin">
