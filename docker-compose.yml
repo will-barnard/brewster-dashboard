@@ -4,14 +4,14 @@ services:
     container_name: brewster-dashboard
     restart: unless-stopped
     ports:
-      - "49195:49195"
+      - "49199:49199"
     env_file:
       - .env
     volumes:
       - db-data:/app/data
     environment:
       - NODE_ENV=production
-      - PORT=49195
+      - PORT=49199
       - DB_PATH=/app/data/dashboard.db
 
 volumes:

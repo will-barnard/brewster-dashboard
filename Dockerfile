@@ -22,6 +22,6 @@ COPY --from=client-build /build/client/dist ./client/dist/
 
 # .env and SQLite DB are mounted at runtime
 
-EXPOSE 49195
+EXPOSE 49199
 
 CMD ["node", "server/index.js"]
